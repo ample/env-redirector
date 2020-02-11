@@ -11,7 +11,7 @@ exports.handler = async (event, context, callback) => {
     }
 
     const response = {
-      statusCode: 301,
+      statusCode: 307,
       headers: {
         Location: dest,
       },
