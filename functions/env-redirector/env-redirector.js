@@ -1,6 +1,7 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 exports.handler = async (event, context) => {
   try {
+    console.log("request: " + JSON.stringify(event))
     const subject = event.queryStringParameters.name || "World";
     return {
       statusCode: 200,
